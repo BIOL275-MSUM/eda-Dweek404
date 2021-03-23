@@ -39,9 +39,14 @@ count(RClay2020,user_login)
 
 # Counting unique MSUM eco  -----------------------------------------------
 
-count(RMSUM2019, user_login)
-count(RMSUM2020, user_login)
+uniquestudent2019<-distinct(RMSUM2019, user_login)%>%
+  pull(user_login)
+uniquestudent2020<-distinct(RMSUM2020, user_login)
 
 # Counting student occurences in clay county  -----------------------------
 
+filter(RC29,user_login %in% c(uniquestudent2019))
+
+
+#methods 
 
