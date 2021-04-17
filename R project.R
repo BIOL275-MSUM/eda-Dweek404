@@ -45,8 +45,6 @@ uniquestudent2020<-distinct(RMSUM2020, user_login)
 
 # Counting student occurences in clay county  -----------------------------
 
-filter(RC29,user_login %in% c(uniquestudent2019))
+filter(C29,user_login %in% c(uniquestudent2019))
 
-
-#methods 
 
