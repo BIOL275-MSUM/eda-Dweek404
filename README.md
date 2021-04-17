@@ -31,7 +31,13 @@ naturalist will be within students lives in the future.
 
 ## Methods
 
-Data was extracted from the MSUM ecology i naturalist group in 2019
+Data was extracted from the MSUM ecology i naturalist group in 2019, and
+2020. The same was done with all Clay county I naturalist observations
+in the same year. This was to see if anyone was using I naturalist
+outside of class time, and if anyone continued to use it the following
+year. The tables of 2019 and 2020 were bound and filtered to just show
+user logins for observations. The amount of logins was then graphed on a
+frequency table.
 
 ## Results
 
@@ -39,7 +45,10 @@ RESULTS
 
 ## Discussion
 
-DISCUSSION
+The results show that there \_\_\_\_ continued interest in using I
+naturalist once the class has finished. With these results it can be
+concluded that I naturalist is \_\_\_\_ an engaging activity with
+continued interest for students.
 
 ## References
 
