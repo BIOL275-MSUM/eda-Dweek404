@@ -45,6 +45,15 @@ uniquestudent2020<-distinct(RMSUM2020, user_login)
 
 # Counting student occurences in clay county  -----------------------------
 
-filter(C29,user_login %in% c(uniquestudent2019))
+f<-filter(C29,user_login %in% c(uniquestudent2019))
+
+
+
+# Messing around ----------------------------------------------------------
+forbind2019<-(MSUM2019)
+forbind2020<-(MSUM2020)
+L<-bind_rows(forbind2019,forbind2020)
+count(L,user_login)
+ggplot(data = L)
 
 

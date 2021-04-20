@@ -5,18 +5,22 @@ output: github_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
 ```
+```{r}
+library(tidyverse)
+library(rinat)
+```
 
 <img src="https://www2.mnstate.edu/uploadedImages/Content/Marketing/logos/MSUM_Signature_Vert_Color.jpg" alt="MSUM logo" width="200" style="float:right">
 
-# PROJECT TITLE
+# I Naturalist Student Participation. 
 
-Dontae Johnson
+Dontae Johnson, Chris Merkford 
 
 Biosciences Department, Minnesota State University Moorhead, 1104 7th Avenue South, Moorhead, MN 56563 USA
 
 ## Abstract
 
-The question that will be being addressed is MSUM student related I naturalist data. I natrualist is a program that allows people to track sightings of local fauna on an online database. This online data base allows people to dientify these sightings from all over the world. The data set being used will be from I naturalist and it will be using data specifically from clay county. This exploratory data analysis will be analyzing how MSUM students contribute to observations. Contributions being measured will be how many students use I naturalist outside of class and how many observations are made outside of projects.
+The question that will be being addressed is MSUM student related I naturalist data. I natrualist is a program that allows people to track sightings of local fauna on an online database. This online data base allows people to dientify these sightings from all over the world. The data set being used will be from I naturalist and it will be using data specifically from clay county. This exploratory data analysis will be analyzing how MSUM students contribute to observations. Contributions being measured will be how many students use I naturalist outside of class the following year. This will show how much students continue to use the program. 
 
 ## Introduction
 
@@ -30,6 +34,53 @@ Data was extracted from the MSUM ecology i naturalist group in 2019, and 2020. T
 
 ## Results
 
+```{r}
+Clay2020<-get_inat_obs(
+  place_id = "13448",
+  year = 2020,
+  maxresults = 9999,
+)
+WHOCONTINUEDIN2020<-filter(Clay2020, user_login %in% c("sierravilmo18"
+                                                       ,"madistrand"
+                                                       ,"jordanwitherill"
+                                                       ,"aaronerlandson"
+                                                       ,"kassicook"
+                                                       ,"paulofstedal"
+                                                       ,"erikka_starr"
+                                                       ,"andiewood"
+                                                       ,"lisebee"
+                                                       ,"keithcrisp"
+                                                       ,"j_breezy05"
+                                                       ,"kathleenedzards"
+                                                       ,"arimabarii"
+                                                       ,"kristofersando"
+                                                       ,"juliaimdieke"
+                                                       ,"cedvall"
+                                                       ,"mck2000"
+                                                       ,"alexhexum"
+                                                       ,"riley93"
+                                                       ,"paulsonda"))
+                           
+
+
+
+
+
+
+
+
+ggplot(data = WHOCONTINUEDIN2020) +
+  geom_bar(mapping = aes(x = fct_infreq(user_login)), fill = "#C5351B",width = .5) +
+  labs(x = "User", y= "Number of observations") +
+  theme_classic(base_size = 9) + 
+  theme(
+    axis.title = element_text(face = "bold"),
+    axis.text = element_text(color = "black", size = rel(1)),
+    axis.text.x = element_text(angle = 90, hjust = 1),
+    axis.ticks.x = element_blank()
+  )
+```
+  
 RESULTS
 
 ## Discussion

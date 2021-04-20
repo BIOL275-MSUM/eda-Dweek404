@@ -1,9 +1,9 @@
 
 <img src="https://www2.mnstate.edu/uploadedImages/Content/Marketing/logos/MSUM_Signature_Vert_Color.jpg" alt="MSUM logo" width="200" style="float:right">
 
-# PROJECT TITLE
+# I Naturalist Student Participation.
 
-Dontae Johnson
+Dontae Johnson, Chris Merkford
 
 Biosciences Department, Minnesota State University Moorhead, 1104 7th
 Avenue South, Moorhead, MN 56563 USA
@@ -18,7 +18,8 @@ data set being used will be from I naturalist and it will be using data
 specifically from clay county. This exploratory data analysis will be
 analyzing how MSUM students contribute to observations. Contributions
 being measured will be how many students use I naturalist outside of
-class and how many observations are made outside of projects.
+class the following year. This will show how much students continue to
+use the program.
 
 ## Introduction
 
@@ -40,6 +41,8 @@ user logins for observations. The amount of logins was then graphed on a
 frequency table.
 
 ## Results
+
+![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 RESULTS
 
